@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #fff8e7, #fdf2d0);
+    color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #b8860b;
+}
+
+.subtitle {
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(184, 134, 11, 0.15);
+    border: 1px solid #f0d98a;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.highlight-bonus {
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff0000, #ffcc00, #00ffcc, #ff00ff);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorShift 3s linear infinite, blinkGlow 1.2s ease-in-out infinite;
+}
+
+/* Moving gradient effect */
+@keyframes colorShift {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+/* Soft blinking glow */
+@keyframes blinkGlow {
+    0%, 100% { text-shadow: 0 0 5px rgba(255, 0, 0, 0.5); }
+    50% { text-shadow: 0 0 20px rgba(255, 215, 0, 0.9); }
+}
+
+.payments {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 36px;
+    background: linear-gradient(45deg, #d4af37, #b8860b);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 18px;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 25px rgba(184, 134, 11, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(184, 134, 11, 0.5);
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
